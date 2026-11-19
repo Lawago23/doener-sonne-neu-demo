@@ -7,12 +7,12 @@
 <title>Döner der Sonne: photograph credits</title>
 <meta name="description" content="The photographers, licences and source pages of the photographs on the Döner der Sonne website.">
 <meta name="site-kind" content="other"><meta name="page-type" content="place"><meta name="page-kind" content="place">
-<meta property="og:title" content="Döner der Sonne: Döner der Sonne: Döner in Mayen"><meta property="og:image" content="share.jpg">
+<meta property="og:title" content="Döner der Sonne: Döner in Mayen"><meta property="og:image" content="share.jpg">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23b8381f'/%3E%3C/svg%3E">
 <meta name="theme-color" content="#f8f5ef">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400..600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400..800&family=Archivo+Black&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/system.css">
 <link rel="stylesheet" href="assets/ui/cards.css">
 <link rel="stylesheet" href="assets/motion/motion.css">
@@ -35,6 +35,104 @@
 .strip figure:hover img { transform: scale(1.03); }
 @media (max-width: 767px) { .strip { grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px; } }
 .hours dd{white-space:nowrap}
+:root{--p-bg:#f6b81b;--p-surface:#ffd35c;--p-ink:#1a1208;--p-muted:#4d3b12;--p-accent:#c8261b;--p-accent-ink:#fff;--p-action:#1a1208;--p-action-ink:#f6b81b;--p-inv-bg:#1a1208;--p-inv-surface:#2a1d0c;--p-inv-ink:#f6b81b;--p-inv-muted:#c9a24a;--p-inv-accent:#f6b81b;--p-inv-accent-ink:#1a1208;--p-inv-action:#f6b81b;--p-inv-action-ink:#1a1208;--font-display:'Archivo Black',Impact,sans-serif;--font-text:'Archivo',system-ui,sans-serif;--display-weight:400;--display-tracking:-0.02em;}
+
+.sk-w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.08em;margin-bottom:-.08em}
+.sk-w>span{display:inline-block;transform:translateY(110%);animation:skw .9s cubic-bezier(.2,.7,.1,1) forwards;animation-delay:calc(.15s + var(--i)*.09s)}
+@keyframes skw{to{transform:none}}
+.sk-js .rows li{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s cubic-bezier(.2,.7,.1,1)}
+.sk-js .rows.in li{opacity:1;transform:none}
+.sk-js .rows.in li:nth-child(2){transition-delay:.08s}.sk-js .rows.in li:nth-child(3){transition-delay:.16s}.sk-js .rows.in li:nth-child(4){transition-delay:.24s}
+.sk-js .mo-ph__ch,.sk-js .strip figure,.sk-js .visit{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.1,1)}
+.sk-js .mo-ph__ch.in,.sk-js .strip figure.in,.sk-js .visit.in{opacity:1;transform:none}
+.hero.hero--place .hero__text>*+*{margin-top:22px!important}
+.hero.hero--place .hero__text>.btn-row{margin-top:30px!important}
+.hero.hero--place .hero__text>*{grid-column:1/-1!important;grid-row:auto!important}
+.sk-clock{display:none}
+@media(min-width:1024px){.sk-clock{display:flex}}
+@media(max-width:1023px){.hero.hero--place .hero__text{gap:0!important}.hero.hero--place>.wrap>.hero-text{align-items:flex-end!important}}
+.sk-rm .sk-w>span{transform:none;animation:none}
+@media (prefers-reduced-motion:reduce){.sk-w>span{transform:none;animation:none}}
+
+body{background:var(--p-bg)}
+.hero.hero--place{min-height:100svh;background:var(--p-bg)}
+@media(min-width:1024px){
+.hero--place>.hero__bg{left:50%;right:0;top:0;width:50%;height:100%;clip-path:polygon(14% 0,100% 0,100% 100%,0 100%);animation:wipe 1.1s cubic-bezier(.2,.7,.1,1) both}
+.hero.hero--place{padding:0!important}.hero.hero--place>.wrap{height:100svh;padding-top:var(--nav,72px)!important;padding-bottom:0!important;box-sizing:border-box}
+.hero.hero--place>.wrap>.hero-text{height:100%;display:flex!important;align-items:center}
+.hero.hero--place>.wrap>.hero-text>.hero__text{display:block;width:46%}
+.hero.hero--place .hero__text>h1{font-size:clamp(48px,6.2vw,96px)!important;line-height:.95;text-transform:uppercase}
+.hero--place .hero__lead{margin-top:28px;max-width:34ch}
+.hero--place .btn-row{margin-top:32px}}
+@keyframes wipe{from{clip-path:polygon(100% 0,100% 0,100% 100%,100% 100%)}}
+.sk-badge{position:absolute;z-index:4;right:46%;bottom:9vh;width:132px;height:132px;transform:translateX(50%)}
+.sk-badge svg{width:100%;height:100%;animation:spin 16s linear infinite}
+.sk-badge b{position:absolute;inset:0;display:grid;place-items:center;font:400 20px 'Archivo Black';color:#1a1208}
+@keyframes spin{to{transform:rotate(360deg)}}
+.sk-tick{background:#1a1208;color:#f6b81b;overflow:hidden;white-space:nowrap;padding:18px 0;font:400 clamp(22px,3vw,40px)/1 'Archivo Black';text-transform:uppercase}
+.sk-tick div{display:inline-block;animation:tick 28s linear infinite}
+.sk-tick span{margin:0 28px}.sk-tick em{font-style:normal;color:#c8261b}
+@keyframes tick{to{transform:translateX(-50%)}}
+.rows li{border-bottom:2px solid #1a1208;padding:14px 0}
+.rows__name{font-weight:700;text-transform:uppercase}
+.t-label{font-family:'Archivo Black';font-size:22px;text-transform:uppercase;color:#c8261b;letter-spacing:0}
+.rows li:hover{background:#1a1208;color:#f6b81b;padding-left:14px;padding-right:14px;transition:all .2s}
+.rows li:hover .rows__value{color:#f6b81b}
+.nav{background:#f6b81b}
+.section h2{text-transform:uppercase}
+@media(max-width:1023px){.sk-badge{right:20px;top:calc(var(--nav,72px) + 8px);bottom:auto;width:90px;height:90px;transform:none}.sk-badge b{font-size:15px}}
+@media(prefers-reduced-motion:reduce){.sk-tick div,.sk-badge svg{animation:none}}
+
+
+main>section:not(.hero){height:auto!important;min-height:0}
+main>section.ly{padding:clamp(72px,9vw,140px) 0!important}
+main>section:not(.hero)>.wrap{height:auto!important}
+main>section:not(.hero)>.wrap:not(.pz-split):not(.bk-tl):not(.im-grid):not(.em-visit){display:block!important}
+.wrap.pz-split,.wrap.bk-tl,.wrap.im-grid,.wrap.em-visit{display:grid!important}
+.dn-visit .wrap{display:grid!important}
+.em-head{display:flex}
+.ly{padding:clamp(72px,9vw,140px) 0}
+.ly .wrap{max-width:1296px;margin:0 auto;padding:0 var(--gutter,24px)}
+.ly h2{font-family:var(--font-display);font-weight:var(--display-weight);letter-spacing:var(--display-tracking);font-size:clamp(36px,5.2vw,76px);line-height:1}
+.ly img{display:block;width:100%;height:100%;object-fit:cover}
+
+.dn-side{max-width:52ch;margin:18px 0 44px}
+.dn-form fieldset{border:0;padding:0;margin:0 0 40px}
+.dn-form legend{font:400 22px 'Archivo Black';text-transform:uppercase;margin-bottom:18px}
+.dn-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.dn-opt{position:relative;cursor:pointer}
+.dn-opt input{position:absolute;opacity:0}
+.dn-opt span{display:flex;flex-direction:column;justify-content:space-between;min-height:128px;padding:18px;border:3px solid #1a1208;background:transparent;transition:transform .18s,background .18s,color .18s;box-shadow:5px 5px 0 #1a1208}
+.dn-opt b{font:400 18px 'Archivo Black';text-transform:uppercase}.dn-opt i{font-style:normal;font-size:14px;opacity:.75}
+.dn-opt em{font:400 26px 'Archivo Black';font-style:normal;margin-top:10px}
+.dn-opt:hover span{transform:translate(-2px,-2px)}
+.dn-opt input:checked+span{background:#1a1208;color:#f6b81b;box-shadow:none;transform:translate(4px,4px)}
+.dn-opt input:focus-visible+span{outline:3px solid #c8261b;outline-offset:3px}
+.dn-bar{position:sticky;bottom:16px;display:flex;gap:24px;align-items:center;justify-content:space-between;background:#1a1208;color:#f6b81b;padding:16px 22px;margin-top:30px}
+.dn-bar span{display:block;font-size:13px;opacity:.7;text-transform:uppercase;letter-spacing:.1em}.dn-bar b{font-weight:600}
+.dn-tot{font:400 clamp(28px,4vw,44px) 'Archivo Black'}
+.dn-bar .btn{background:#f6b81b;color:#1a1208}
+.dn-spiess{background:#1a1208;color:#f6b81b}
+.dn-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;list-style:none;padding:0;margin:48px 0 0;counter-reset:c}
+.dn-col figure{margin:0;aspect-ratio:1;overflow:hidden;clip-path:polygon(0 0,100% 0,100% 88%,0 100%)}
+.dn-col:nth-child(2) figure{clip-path:polygon(0 12%,100% 0,100% 100%,0 88%)}
+.dn-col:nth-child(3) figure{clip-path:polygon(0 0,100% 12%,100% 100%,0 100%)}
+.dn-col h3{font:400 28px 'Archivo Black';text-transform:uppercase;margin-top:20px}.dn-col p{opacity:.8}
+.dn-visit .wrap{display:grid;grid-template-columns:1fr 1fr auto;gap:40px;align-items:center}
+.dn-addr{font:400 clamp(32px,4vw,56px)/1 'Archivo Black';text-transform:uppercase;font-style:normal}
+.dn-visit .hours{display:grid;grid-template-columns:auto auto;gap:6px 24px}
+@media(max-width:900px){.dn-grid{grid-template-columns:1fr 1fr}.dn-cols{grid-template-columns:1fr}.dn-visit .wrap{grid-template-columns:1fr}.dn-bar{flex-wrap:wrap}}
+
+.sk-foot{padding:clamp(56px,8vw,110px) 0 28px}
+.sk-foot .wrap{max-width:1296px;margin:0 auto;padding:0 var(--gutter,24px)}
+.sk-legal{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:40px;font-size:13px;opacity:.8}
+.f-dn{background:#1a1208;color:#f6b81b}
+.f-dn-top{display:flex;justify-content:space-between;gap:24px;align-items:center;flex-wrap:wrap}
+.f-dn h2{font:400 clamp(30px,4vw,56px) 'Archivo Black';text-transform:uppercase}
+.f-dn .btn{background:#f6b81b;color:#1a1208}
+.f-dn-big{font:400 clamp(36px,8.4vw,132px)/1 'Archivo Black';text-transform:uppercase;color:transparent;-webkit-text-stroke:2px #f6b81b;margin-top:48px;white-space:nowrap;overflow:hidden}
+.f-dn a{color:inherit}
+.nav{border-bottom:4px solid #1a1208}.nav__link{font-weight:800!important;text-transform:uppercase;letter-spacing:.04em}
 </style>
 <script>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
 <script>document.documentElement.classList.add('mo-js');setTimeout(()=>document.documentElement.classList.add('mo-safe'),2500)</script>
@@ -62,44 +160,34 @@
   <section class="credits-list" id="credits" aria-labelledby="credits-h">
     <h1 id="credits-h">Photograph credits</h1>
     <ul>
-      <li><a href="https://commons.wikimedia.org/wiki/File:D%C3%B6ner_Kebab_plate_with_onions.jpg">Almanta</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a></li>
-      <li><a href="https://commons.wikimedia.org/wiki/File:D%C3%B6ner_Kebab_with_french_fries_and_chili_sauce_2022-12-28_-_2.jpg">Almanta</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a></li>
       <li><a href="https://commons.wikimedia.org/wiki/File:Sucuk_d%C3%B6ner.jpg">Satirdan kahraman</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a></li>
-      <li><a href="https://commons.wikimedia.org/wiki/File:Chicken_D%C3%B6ner_in_Berlin.jpg">Felipe Tofani</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0">CC BY-SA 2.0</a></li>
       <li><a href="https://commons.wikimedia.org/wiki/File:Doner_Kebab_at_2026_BIFC_20260905152847.jpg">TurnOnTheNight</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a></li>
+      <li><a href="https://commons.wikimedia.org/wiki/File:Shawarma,_Rostov-on-Don,_Russia.jpg">Vyacheslav Argenberg</a>, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a></li>
+      <li><a href="https://commons.wikimedia.org/wiki/File:Lebanon,_Baalbek,_Lebanese_Shawarma.jpg">Vyacheslav Argenberg</a>, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a></li>
     </ul>
   </section>
 </main>
 
-<footer class="footer closing footer--visit" id="contact" aria-labelledby="close-h">
-  <div class="wrap">
-    <div class="closing__cta close--type">
-      <div class="section-head"><h2 id="close-h">Döner zum Mitnehmen</h2><p class="t-lead">Fragen Sie nach der Tagesempfehlung.</p></div>
-      <a class="btn btn--primary btn--xl" href="https://www.openstreetmap.org/search?query=Viehmarkt%20Mayen">Anfahrt ansehen<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
-    </div>
-    <div class="closing__links">
-      <div class="grid">
-        <div class="span-6 stack-4">
-          <address class="footer__address">Viehmarkt, Mayen</address>
-          <p><a class="link" href="https://www.openstreetmap.org/search?query=Viehmarkt%20Mayen">Anfahrt ansehen</a></p>
-        </div>
-        <div class="span-6 start-7 stack-4">
-          <h4>Öffnungszeiten</h4>
-          <dl class="hours" data-assumed><dt>Montag bis Freitag</dt><dd>8:00 bis 18:00</dd><dt>Samstag</dt><dd>9:00 bis 17:00</dd><dt>Sonntag</dt><dd>10:00 bis 16:00</dd></dl>
-        </div>
-      </div>
-      <div class="footer__legal">
-        <span>&copy; 2026 Döner der Sonne &nbsp; Beispieldaten</span>
-        <a class="credits" href="credits.html">Fotos von Wikimedia Commons</a>
-      </div>
-    </div>
-  </div>
-</footer>
+<footer class="sk-foot f-dn" id="contact"><div class="wrap"><div class="f-dn-top"><h2>Döner zum Mitnehmen</h2><a class="btn btn--primary btn--xl" href="https://www.openstreetmap.org/search?query=Viehmarkt%20Mayen">Anfahrt ansehen</a></div><p class="f-dn-big" aria-hidden="true">Döner der Sonne</p><div class="sk-legal"><span>&copy; 2026 Döner der Sonne &nbsp; Beispieldaten</span><a class="credits" href="credits.html">Fotos von Wikimedia Commons</a></div></div></footer>
 <nav class="actionbar" aria-label="Schnellzugriff">
   <a class="btn btn--primary" href="https://www.openstreetmap.org/search?query=Viehmarkt%20Mayen">Anfahrt</a>
 </nav>
 <script type="module" src="assets/system.js"></script>
 <script type="module" src="assets/motion/motion.js"></script>
 <script type="module" src="assets/layout/layout.js"></script>
+
+<script>
+(function(){
+var rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+document.documentElement.classList.add('sk-js');
+if(rm){document.documentElement.classList.add('sk-rm');return;}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.15});
+document.querySelectorAll('.rows,.sk-rev,.mo-ph__ch,.strip figure,.visit').forEach(function(el){io.observe(el)});
+var h=document.querySelector('.hero h1');
+if(h&&!h.dataset.split){h.dataset.split=1;var w=h.textContent.trim().split(/\s+/);h.setAttribute('aria-label',h.textContent.trim());h.innerHTML=w.map(function(x,i){return '<span class="sk-w" aria-hidden="true" style="--i:'+i+'"><span>'+x+'</span></span>'}).join(' ');}
+var par=document.querySelectorAll('[data-par]');
+if(par.length){var t=0;addEventListener('scroll',function(){if(t)return;t=requestAnimationFrame(function(){t=0;par.forEach(function(p){var r=p.getBoundingClientRect();var k=(r.top+r.height/2-innerHeight/2)/innerHeight;p.style.setProperty('--py',(k*-24).toFixed(1)+'px')})})},{passive:true});}
+})();
+</script><script>(function(){var h=document.querySelector('.hero--place');if(!h)return;var b=document.createElement('div');b.className='sk-badge';b.setAttribute('aria-hidden','true');b.innerHTML='<svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="48" fill="#c8261b"/><defs><path id="c" d="M50 50m-36 0a36 36 0 1 1 72 0a36 36 0 1 1-72 0"/></defs><text font-size="10.5" font-family="Archivo Black" fill="#f6b81b" letter-spacing="2.2"><textPath href="#c">FRISCH VOM SPIESS · TÄGLICH · </textPath></text></svg><b>ab 11</b>';h.appendChild(b);var m=document.createElement('div');m.className='sk-tick';m.setAttribute('aria-hidden','true');var t='<span>Döner</span><span><em>*</em></span><span>Dürüm</span><span><em>*</em></span><span>Teller</span><span><em>*</em></span><span>Ayran</span><span><em>*</em></span>';m.innerHTML='<div>'+t+t+t+t+'</div>';h.after(m)})();</script>
 </body>
 </html>

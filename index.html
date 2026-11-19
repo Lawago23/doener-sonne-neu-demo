@@ -123,6 +123,16 @@ main>section:not(.hero)>.wrap:not(.pz-split):not(.bk-tl):not(.im-grid):not(.em-v
 .dn-visit .hours{display:grid;grid-template-columns:auto auto;gap:6px 24px}
 @media(max-width:900px){.dn-grid{grid-template-columns:1fr 1fr}.dn-cols{grid-template-columns:1fr}.dn-visit .wrap{grid-template-columns:1fr}.dn-bar{flex-wrap:wrap}}
 
+.sk-foot{padding:clamp(56px,8vw,110px) 0 28px}
+.sk-foot .wrap{max-width:1296px;margin:0 auto;padding:0 var(--gutter,24px)}
+.sk-legal{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:40px;font-size:13px;opacity:.8}
+.f-dn{background:#1a1208;color:#f6b81b}
+.f-dn-top{display:flex;justify-content:space-between;gap:24px;align-items:center;flex-wrap:wrap}
+.f-dn h2{font:400 clamp(30px,4vw,56px) 'Archivo Black';text-transform:uppercase}
+.f-dn .btn{background:#f6b81b;color:#1a1208}
+.f-dn-big{font:400 clamp(36px,8.4vw,132px)/1 'Archivo Black';text-transform:uppercase;color:transparent;-webkit-text-stroke:2px #f6b81b;margin-top:48px;white-space:nowrap;overflow:hidden}
+.f-dn a{color:inherit}
+.nav{border-bottom:4px solid #1a1208}.nav__link{font-weight:800!important;text-transform:uppercase;letter-spacing:.04em}
 </style>
 <script>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
 <script>document.documentElement.classList.add('mo-js');setTimeout(()=>document.documentElement.classList.add('mo-safe'),2500)</script>
@@ -169,30 +179,7 @@ main>section:not(.hero)>.wrap:not(.pz-split):not(.bk-tl):not(.im-grid):not(.em-v
 <script>(function(){var f=document.querySelector('.dn-form');if(!f)return;function r(){var t=0,n=[];f.querySelectorAll('input:checked').forEach(function(i){t+=+i.dataset.p;n.push(i.value)});document.getElementById('dn-sum').textContent=n.length?n.join(' + '):'noch leer';document.getElementById('dn-tot').textContent=t.toFixed(2).replace('.',',')+' \u20ac'}f.addEventListener('change',r);document.getElementById('dn-copy').addEventListener('click',function(){var s=document.getElementById('dn-sum').textContent+' / '+document.getElementById('dn-tot').textContent;try{navigator.clipboard.writeText(s)}catch(e){}this.textContent='Kopiert';var b=this;setTimeout(function(){b.textContent='Zettel kopieren'},1600)});r()})();</script>
 </main>
 
-<footer class="footer closing footer--visit" id="contact" aria-labelledby="close-h">
-  <div class="wrap">
-    <div class="closing__cta close--type">
-      <div class="section-head"><h2 id="close-h">Döner zum Mitnehmen</h2><p class="t-lead">Fragen Sie nach der Tagesempfehlung.</p></div>
-      <a class="btn btn--primary btn--xl" href="https://www.openstreetmap.org/search?query=Viehmarkt%20Mayen">Anfahrt ansehen<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
-    </div>
-    <div class="closing__links">
-      <div class="grid">
-        <div class="span-6 stack-4">
-          <address class="footer__address">Viehmarkt, Mayen</address>
-          <p><a class="link" href="https://www.openstreetmap.org/search?query=Viehmarkt%20Mayen">Anfahrt ansehen</a></p>
-        </div>
-        <div class="span-6 start-7 stack-4">
-          <h4>Öffnungszeiten</h4>
-          <dl class="hours" data-assumed><dt>Montag bis Samstag</dt><dd>11:00 bis 21:00</dd><dt>Sonntag</dt><dd>12:00 bis 20:00</dd><dt>Feiertage</dt><dd>12:00 bis 18:00</dd></dl>
-        </div>
-      </div>
-      <div class="footer__legal">
-        <span>&copy; 2026 Döner der Sonne &nbsp; Beispieldaten</span>
-        <a class="credits" href="credits.html">Fotos von Wikimedia Commons</a>
-      </div>
-    </div>
-  </div>
-</footer>
+<footer class="sk-foot f-dn" id="contact"><div class="wrap"><div class="f-dn-top"><h2>Döner zum Mitnehmen</h2><a class="btn btn--primary btn--xl" href="https://www.openstreetmap.org/search?query=Viehmarkt%20Mayen">Anfahrt ansehen</a></div><p class="f-dn-big" aria-hidden="true">Döner der Sonne</p><div class="sk-legal"><span>&copy; 2026 Döner der Sonne &nbsp; Beispieldaten</span><a class="credits" href="credits.html">Fotos von Wikimedia Commons</a></div></div></footer>
 <nav class="actionbar" aria-label="Schnellzugriff">
   <a class="btn btn--primary" href="https://www.openstreetmap.org/search?query=Viehmarkt%20Mayen">Anfahrt</a>
 </nav>
